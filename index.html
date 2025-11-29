@@ -507,6 +507,53 @@ function goHome() {
     font-weight: bold;
     color: #1a237e;
 }
+
+
+
+/* ---------- کادر پلاک‌ها ---------- */
+.plate-container {
+    width: 90%;
+    max-width: 450px;
+    margin: 20px auto; /* فاصله بین کادرها */
+    padding: 15px;
+    border: 2px solid #3b53ff; /* حاشیه اصلی */
+    border-radius: 16px;        /* گوشه‌های گرد */
+    background: linear-gradient(145deg, #eef1ff, #ffffff); /* پس‌زمینه ملایم */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* سایه */
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.plate-container:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ---------- نام پلاک ---------- */
+.plate-name {
+    display: block;
+    font-weight: bold;
+    color: #1a237e;
+    margin: 10px 0;
+    font-size: 4.5vw;
+    line-height: 1.2;
+}
+
+/* ---------- تصویر پلاک ---------- */
+.plate-img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    border-radius: 12px;
+    border: 1px solid #3b53ff; /* حاشیه کوچک برای تصویر */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+
+
+
+
+
 /* ---------- نوار پایین ---------- */
 .bottom-bar {
     position: fixed;
@@ -537,16 +584,22 @@ function goHome() {
 .bottom-btn:active {
     transform: scale(0.97);
 }
-
 /* ---------- پلاک‌ها و صفحات ---------- */
-#eventSection, #aboutSection, #creatorsSection, #descriptionSection {
+#eventSection,
+#aboutSection,
+#creatorsSection,
+#descriptionSection {
     display: none;
     width: 100%;
     padding: 15px;
     box-sizing: border-box;
+    border: 2px solid #3b53ff; /* حاشیه */
+    border-radius: 12px;       /* گوشه‌های گرد */
+    background: #f9faff;       /* پس‌زمینه ملایم */
+    margin-bottom: 20px;
 }
 
-
+/* ---------- نام پلاک ---------- */
 .plate-name {
     display: block;
     font-weight: bold;
@@ -554,14 +607,20 @@ function goHome() {
     margin: 10px 0;
     font-size: 5vw;
     line-height: 1.2;
+    text-align: center;
 }
 
+/* ---------- تصویر پلاک ---------- */
 .plate-img {
     width: 100%;
     max-height: 200px;
     object-fit: contain;
     border-radius: 12px;
+    border: 1px solid #3b53ff; /* حاشیه کوچک برای تصویر */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
+/* ---------- متن توضیح پلاک ---------- */
 .plate-text {
     text-align: center;
     color: #1a237e;
@@ -569,6 +628,11 @@ function goHome() {
     margin: 15px 0; /* فاصله از بالا و پایین */
     font-size: 16px;
     line-height: 1.4;
+    padding: 10px 12px;
+    border: 1px solid #3b53ff;   /* حاشیه دور متن */
+    border-radius: 10px;
+    background: #e3eaff;         /* پس‌زمینه ملایم */
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
 }
 
 /* ---------- دکمه بازگشت دایره ای ---------- */
