@@ -296,12 +296,45 @@ document.getElementById("creatorsBtn").addEventListener("click", () => {
 
 
 <!-- ---------- دکمه رویداد ---------- -->
-<button class="event-btn-bottom" onclick="goToEventPage()">رویداد</button>
+<button class="event-btn-bottom" onclick="openEventPage()">رویداد</button>
+
+<!-- ---------- بخش نمایش پلاک‌ها ---------- -->
+<div id="eventSection" style="display:none;">
+    <div class="plate-container">
+        <span class="plate-name top">پلاک: 12 الف</span>
+        <img src="plate1.jpg" alt="پلاک 12 الف" class="plate-img">
+        <span class="plate-name bottom">پلاک: 12 الف</span>
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک: 45 ب</span>
+        <img src="plate2.jpg" alt="پلاک 45 ب" class="plate-img">
+        <span class="plate-name bottom">پلاک: 45 ب</span>
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک: 65 ج</span>
+        <img src="plate3.jpg" alt="پلاک 65 ج" class="plate-img">
+        <span class="plate-name bottom">پلاک: 65 ج</span>
+    </div>
+</div>
 
 <script>
-function goToEventPage() {
-    // هدایت به صفحه پلاک‌ها
-    window.location.href = "event.html"; // آدرس صفحه جدید را اینجا بگذارید
+function openEventPage() {
+    // کل صفحه اصلی را مخفی می‌کنیم
+    document.body.innerHTML = ""; // حذف همه محتوای قبلی
+    document.body.style.background = "#eef1ff"; // رنگ پس‌زمینه
+
+    // اضافه کردن بخش پلاک‌ها
+    const eventSection = document.getElementById("eventSection");
+    eventSection.style.display = "block";
+    eventSection.style.width = "100%";
+    eventSection.style.height = "100%";
+    eventSection.style.margin = "0";
+    eventSection.style.padding = "20px";
+    eventSection.style.overflowY = "auto";
+
+    document.body.appendChild(eventSection);
 }
 </script>
 
@@ -327,38 +360,6 @@ function goToEventPage() {
 
 .event-btn-bottom:active {
     transform: translateX(-50%) scale(0.97);
-}
-</style>
-
-<!-- ---------- بخش نمایش پلاک‌ها ---------- -->
-<div id="eventSection">
-    <div class="plate-container">
-        <span class="plate-name top">پلاک: 12 الف</span>
-        <img src="plate1.jpg" alt="پلاک 12 الف" class="plate-img">
-        <span class="plate-name bottom">پلاک: 12 الف</span>
-    </div>
-
-    <div class="plate-container">
-        <span class="plate-name top">پلاک: 45 ب</span>
-        <img src="plate2.jpg" alt="پلاک 45 ب" class="plate-img">
-        <span class="plate-name bottom">پلاک: 45 ب</span>
-    </div>
-
-    <div class="plate-container">
-        <span class="plate-name top">پلاک: 65 ج</span>
-        <img src="plate3.jpg" alt="پلاک 65 ج" class="plate-img">
-        <span class="plate-name bottom">پلاک: 65 ج</span>
-    </div>
-</div>
-
-<style>
-body {
-    font-family: 'Vazirmatn', sans-serif;
-    background: linear-gradient(to bottom, #dfe9ff, #eef1ff);
-    margin: 0;
-    padding: 20px;
-    text-align: center;
-    overflow-x: hidden;
 }
 
 /* ---------- پلاک‌ها ---------- */
@@ -390,16 +391,8 @@ body {
     height: auto;
     border-radius: 12px;
 }
-
-/* ریسپانسیو */
-@media screen and (max-width: 768px) {
-    .plate-name { font-size: 5vw; }
-}
-
-@media screen and (min-width: 1024px) {
-    .plate-name { font-size: 3vw; }
-}
 </style>
+
 
 
 
