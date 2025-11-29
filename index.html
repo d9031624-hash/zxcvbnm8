@@ -245,8 +245,9 @@ h2 {
 <div class="app-container">
 
    
-
-
+    <div class="menu-toggle" id="menuToggle">≡</div>
+    <div class="menu" id="menu">
+  </div>
 
     <!-- پلاک -->
     <div class="plate">
@@ -273,19 +274,6 @@ h2 {
 
 
 
-<script>
-// عملکرد دکمه درباره برنامه
-document.getElementById("aboutBtn").addEventListener("click", () => {
-    alert("پلاک‌یاب هوشمند نسخه 2.0\nتوسعه‌دهنده: +IGLASH\nتمامی حقوق محفوظ است.");
-});   
-    
-</script>
-<script>
-// عملکرد دکمه نام سازندگان
-document.getElementById("creatorsBtn").addEventListener("click", () => {
-    alert("نام سازندگان:\n\nبرنامه‌نویس: محمدمهدی مرادیان\nطراح استایل: داود مرادیان\n\nتمامی حقوق محفوظ است.");
-});
-</script>
 
 
 
@@ -558,17 +546,6 @@ function goHome() {
     box-sizing: border-box;
 }
 
-.plate-container {
-    width: 90%;
-    max-width: 450px;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #3b53ff;
-    border-radius: 16px;
-    padding: 12px;
-    background: linear-gradient(145deg, #eef1ff, #ffffff);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
 
 .plate-name {
     display: block;
