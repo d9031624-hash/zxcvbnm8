@@ -253,7 +253,7 @@ h2 {
         <!-- <button>دکمه ۴</button> -->
     </div>
 
-    <h2>پلاک‌یاب هوشمند</h2>
+  
 
     <!-- پلاک -->
     <div class="plate">
@@ -295,82 +295,283 @@ document.getElementById("creatorsBtn").addEventListener("click", () => {
 </script>
 
 
-<!-- ---------- دکمه رویداد ---------- -->
-<button class="event-btn-bottom" onclick="openEventPage()">رویداد</button>
 
-<!-- ---------- بخش نمایش پلاک‌ها ---------- -->
+<!-- ---------- نوار بالایی ---------- -->
+<div class="top-bar">
+    <img src="https://uploadkon.ir/uploads/103629_25ChatGPT-Image-Nov-27-2025-05-10-12-PM.png" alt="لوگوی برنامه" class="app-logo">
+    <span class="app-name">پلاک‌یاب هوشمند</span>
+</div>
+<!-- ---------- نوار پایین ---------- -->
+<div class="bottom-bar">
+    <button class="bottom-btn" onclick="openEventPage()">پلاک های ویژه</button>
+    <button class="bottom-btn" onclick="goHome()">خانه</button>
+    <button class="bottom-btn" onclick="openAboutPage()">درباره برنامه</button>
+</div>
+
+<!-- ---------- بخش نمایش پلاک‌ها (پنهان در ابتدا) ---------- -->
 <div id="eventSection" style="display:none;">
     <div class="plate-container">
-        <span class="plate-name top">پلاک: 11 الف</span>
-        <img src="plate1.jpg" alt="پلاک 12 الف" class="plate-img">
-        <span class="plate-name bottom">پلاک: 11 الف</span>
+        <span class="plate-name top">پلاک ارتش جمهوری اسلامی ایران</span>
+        <img src="https://uploadkon.ir/uploads/889a29_25Pelak15.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+        <div class="plate-container">
+        <span class="plate-name top">پلاک خودروهای شخصی</span> 
+        <img src="https://uploadkon.ir/uploads/e0f429_25car-number-plate-Top-472x267.jpg" alt="پلاک ارتش" class="plate-img">
     </div>
 
     <div class="plate-container">
-        <span class="plate-name top">پلاک: 45 ب</span>
-        <img src="plate2.jpg" alt="پلاک 45 ب" class="plate-img">
-        <span class="plate-name bottom">پلاک: 45 ب</span>
+        <span class="plate-name top">پلاک تاکسی</span> 
+        <img src="https://uploadkon.ir/uploads/311229_25پلاک-تاکسی.png" alt="پلاک ارتش" class="plate-img">
     </div>
 
     <div class="plate-container">
-        <span class="plate-name top">پلاک: 65 ج</span>
-        <img src="plate3.jpg" alt="پلاک 65 ج" class="plate-img">
-        <span class="plate-name bottom">پلاک: 65 ج</span>
+        <span class="plate-name top">پلاک خودروهای عمومی</span> 
+        <img src="https://uploadkon.ir/uploads/c64f29_25پلاک-عمومی.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک خودروهای دولتی</span> 
+        <img src="https://uploadkon.ir/uploads/369e29_25License-car-plates-government.png" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک ویژه معلولین و جانبازان</span>  
+        <img src="https://uploadkon.ir/uploads/34df29_25پلاک-معلولین-گلوبایت-خودرو-www-Globyte-ir-.png" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک ترانزیت بین المللی</span>  
+        <img src="https://uploadkon.ir/uploads/f8c729_25plak-tranzit.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک ویژه خودروهای کشاورزی</span>  
+        <img src="https://uploadkon.ir/uploads/abd729_25IMG-۲۰۲۵۱۱۳۰-۰۰۴۱۱۲.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک خودروهای تشریفات</span>  
+        <img src="https://uploadkon.ir/uploads/93c529_25IMG-۲۰۲۵۱۱۳۰-۰۰۴۴۴۷.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک خودروهای تاریخی</span>  
+        <img src="https://uploadkon.ir/uploads/e28c29_2548287-980.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک خودروهای سیاسی</span>   
+        <img src="https://uploadkon.ir/uploads/4e1829_25License-plates-of-political-cars.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک موتورسیکلت ها</span>   
+        <img src="https://uploadkon.ir/uploads/283c29_25yy47-dfefwef.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک گذر موقت</span>   
+        <img src="https://uploadkon.ir/uploads/b65129_25پلاک-موقت.jpg" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک سرویس سیاسی</span>   
+        <img src="https://uploadkon.ir/uploads/d05b29_25Pelak-melie-service.png" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک ستاد کل نیروهای مسلح</span>   
+        <img src="https://uploadkon.ir/uploads/f59a29_25پلاک-ستاد-کل-نیروهای-مسلح-گلوبایت-خودرو-www-Globyte-ir-.png" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک وزارت دفاع و پشتیبانی نیروهای مسلح ایران</span>   
+        <img src="https://uploadkon.ir/uploads/95d129_25پلاک-آبی-نظامی-وزارت-دفاع-گلوبایت-خودرو-www-Globyte-ir-.jpg"alt="پلاک ارتش" class="plate-img">
+    </div>
+
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک سپاه پاسداران انقلاب اسلامی ایران ایران</span>   
+        <img src="https://uploadkon.ir/uploads/f70229_25پلاک-سپاه-گلوبایت-خودرو-www-Globyte-ir-.png"alt="پلاک ارتش" class="plate-img">
+    </div>
+
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک منطقه آزاد انزلی</span>    
+        <img src="https://uploadkon.ir/uploads/3f9429_25Pelake-MAT-Anzali.png" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک منطقه آزاد اروند</span>    
+        <img src="https://uploadkon.ir/uploads/c45629_25Pelake-MAT-Arvand.png" alt="پلاک ارتش" class="plate-img">
+    </div>
+
+
+    <div class="plate-container">
+        <span class="plate-name top">پلاک نیروی انتظامی</span>
+        <img src="https://uploadkon.ir/uploads/2d5a29_25Police-car-license-plate.png" alt="پلاک نیروی انتظامی" class="plate-img">
+    </div>
+</div>
+
+<!-- ---------- بخش درباره برنامه ---------- -->
+<div id="aboutSection" style="display:none;">
+    <div class="plate-container">
+        <button class="bottom-btn" onclick="openCreatorsPage()">نام سازندگان</button>
+        <button class="bottom-btn" onclick="openDescriptionPage()">توضیحات برنامه</button>
+    </div>
+</div>
+
+<!-- ---------- بخش نام سازندگان ---------- -->
+<div id="creatorsSection" style="display:none; position:relative;">
+    <button class="back-btn" onclick="backToAbout()">← بازگشت</button>
+    <div class="plate-container">
+        <span class="plate-name top">برنامه نویس : محمدمهدی مرادیان و طراح استایل: داود مرادیان</span>
+    </div>
+</div>
+
+<!-- ---------- بخش توضیحات برنامه ---------- -->
+<div id="descriptionSection" style="display:none; position:relative;">
+    <button class="back-btn" onclick="backToAbout()">← بازگشت</button>
+    <div class="plate-container">
+        <span class="plate-name top">پلاک‌یاب خودرو، دستیار هوشمند شما در شناسایی پلاک خودروها و دریافت اطلاعات مرتبط است. با این برنامه می‌توانید به راحتی انواع پلاک‌های نظامی، انتظامی و عمومی را مشاهده کنید، جزئیات آن‌ها را بررسی کنید و همیشه اطلاعات درست و دقیق داشته باشید. محیط ساده و کاربرپسند برنامه، همراه با رابطی روان، تجربه‌ای لذت‌بخش و سریع برای شما فراهم می‌کند.
+
+با پلاک‌یاب خودرو، دیگر هیچ پلاکی مخفی نمی‌ماند!.</span>
     </div>
 </div>
 
 <script>
 function openEventPage() {
-    // کل صفحه اصلی را مخفی می‌کنیم
-    document.body.innerHTML = ""; // حذف همه محتوای قبلی
-    document.body.style.background = "#eef1ff"; // رنگ پس‌زمینه
+    const allElements = document.body.children;
+    for(let el of allElements){
+        if(el.id !== 'eventSection' && !el.classList.contains('bottom-bar')) {
+            el.style.display = 'none';
+        }
+    }
+    document.getElementById("eventSection").style.display = "block";
+    document.getElementById("eventSection").scrollIntoView({behavior: "smooth"});
+}
 
-    // اضافه کردن بخش پلاک‌ها
-    const eventSection = document.getElementById("eventSection");
-    eventSection.style.display = "block";
-    eventSection.style.width = "100%";
-    eventSection.style.height = "100%";
-    eventSection.style.margin = "0";
-    eventSection.style.padding = "20px";
-    eventSection.style.overflowY = "auto";
+function openAboutPage() {
+    const allElements = document.body.children;
+    for(let el of allElements){
+        if(el.id !== 'aboutSection' && !el.classList.contains('bottom-bar')) {
+            el.style.display = 'none';
+        }
+    }
+    document.getElementById("aboutSection").style.display = "block";
+    document.getElementById("aboutSection").scrollIntoView({behavior: "smooth"});
+}
 
-    document.body.appendChild(eventSection);
+function openCreatorsPage() {
+    document.getElementById("aboutSection").style.display = "none";
+    document.getElementById("creatorsSection").style.display = "block";
+}
+
+function openDescriptionPage() {
+    document.getElementById("aboutSection").style.display = "none";
+    document.getElementById("descriptionSection").style.display = "block";
+}
+
+function backToAbout() {
+    document.getElementById("creatorsSection").style.display = "none";
+    document.getElementById("descriptionSection").style.display = "none";
+    document.getElementById("aboutSection").style.display = "block";
+}
+
+function goHome() {
+    const allElements = document.body.children;
+    for(let el of allElements){
+        if(!el.classList.contains('bottom-bar') && el.id !== 'eventSection' && el.id !== 'aboutSection' && el.id !== 'creatorsSection' && el.id !== 'descriptionSection'){
+            el.style.display = '';
+        }
+    }
+    document.getElementById("eventSection").style.display = "none";
+    document.getElementById("aboutSection").style.display = "none";
+    document.getElementById("creatorsSection").style.display = "none";
+    document.getElementById("descriptionSection").style.display = "none";
 }
 </script>
 
 <style>
-.event-btn-bottom {
+/* ---------- نوار بالایی ---------- */
+.top-bar {
+    width: 100%;
+    background: #a6c8ff; /* آبی کم‌رنگ */
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box;
     position: fixed;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 92%;
-    max-width: 420px;
-    padding: 14px;
-    border: none;
-    border-radius: 16px;
-    background: linear-gradient(135deg, #0099ff, #005bbb);
-    color: #fff;
-    font-size: 19px;
+    top: 0;
+    z-index: 9999;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+.app-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 8px; /* مربعی با گوشه کمی گرد */
+}
+
+.app-name {
+    font-size: 20px;
     font-weight: bold;
-    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
-    cursor: pointer;
+    color: #1a237e;
+}
+/* ---------- نوار پایین ---------- */
+.bottom-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #d0e4ff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.1);
     z-index: 9999;
 }
 
-.event-btn-bottom:active {
-    transform: translateX(-50%) scale(0.97);
+.bottom-btn {
+    flex: 1;
+    margin: 8px;
+    padding: 12px 0;
+    border: none;
+    border-radius: 14px;
+    background: linear-gradient(135deg, #0099ff, #005bbb);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
 }
 
-/* ---------- پلاک‌ها ---------- */
+.bottom-btn:active {
+    transform: scale(0.97);
+}
+
+/* ---------- پلاک‌ها و صفحات ---------- */
+#eventSection, #aboutSection, #creatorsSection, #descriptionSection {
+    display: none;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
 .plate-container {
     width: 90%;
-    max-width: 400px;
+    max-width: 450px;
     margin: 20px auto;
     text-align: center;
     border: 2px solid #3b53ff;
     border-radius: 16px;
-    padding: 10px;
+    padding: 12px;
     background: linear-gradient(145deg, #eef1ff, #ffffff);
     box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
@@ -379,22 +580,48 @@ function openEventPage() {
     display: block;
     font-weight: bold;
     color: #1a237e;
-    margin: 5px 0;
-    font-size: 4vw;
+    margin: 10px 0;
+    font-size: 5vw;
+    line-height: 1.2;
 }
-
-.plate-name.top { margin-bottom: 8px; }
-.plate-name.bottom { margin-top: 8px; }
 
 .plate-img {
     width: 100%;
-    height: auto;
+    max-height: 200px;
+    object-fit: contain;
     border-radius: 12px;
+}
+
+/* ---------- دکمه بازگشت دایره ای ---------- */
+.back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 14px;
+    border-radius: 50%;
+    border: none;
+    background: #005bbb;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    z-index: 10000;
+}
+
+.back-btn:active {
+    transform: scale(0.9);
 }
 </style>
 
-
-
+<style>
+#eventSection {
+    display: none;
+    overflow-y: auto; /* فعال کردن اسکرول عمودی */
+    padding-top: 80px; /* فاصله از نوار بالایی */
+    padding-bottom: 60px; /* فاصله از نوار پایین */
+    height: calc(100vh - 80px - 60px); /* ارتفاع کامل صفحه منهای نوار بالا و پایین */
+    box-sizing: border-box;
+}
+</style>
 
 
 <script>
@@ -1810,6 +2037,7 @@ document.addEventListener("paste", e => e.preventDefault());
 document.addEventListener("touchstart", e => { if(e.touches.length > 1) e.preventDefault(); }, {passive:false});
 document.addEventListener("gesturestart", e => e.preventDefault());
 </script>
+</style>
 
 </body>
 </html>
