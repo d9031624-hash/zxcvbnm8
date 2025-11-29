@@ -246,7 +246,7 @@ h2 {
 
    
 
-  
+
 
     <!-- پلاک -->
     <div class="plate">
@@ -300,6 +300,7 @@ document.getElementById("creatorsBtn").addEventListener("click", () => {
     <button class="bottom-btn" onclick="goHome()">خانه</button>
     <button class="bottom-btn" onclick="openAboutPage()">درباره برنامه</button>
 </div>
+
 
 <!-- ---------- بخش نمایش پلاک‌ها (پنهان در ابتدا) ---------- -->
 <div id="eventSection" style="display:none;">
@@ -584,6 +585,14 @@ function goHome() {
     object-fit: contain;
     border-radius: 12px;
 }
+.plate-text {
+    text-align: center;
+    color: #1a237e;
+    font-weight: bold;
+    margin: 15px 0; /* فاصله از بالا و پایین */
+    font-size: 16px;
+    line-height: 1.4;
+}
 
 /* ---------- دکمه بازگشت دایره ای ---------- */
 .back-btn {
@@ -605,6 +614,7 @@ function goHome() {
 }
 </style>
 
+
 <style>
 #eventSection {
     display: none;
@@ -615,6 +625,7 @@ function goHome() {
     box-sizing: border-box;
 }
 </style>
+
 
 
 <script>
